@@ -1,6 +1,6 @@
-let grid = document.getElementById("grid");
-let gridLengthBtn = document.getElementById("grid-length");
-let colorBtn = document.getElementById("color-picker");
+const grid = document.getElementById("grid");
+const gridLengthBtn = document.getElementById("grid-length");
+const colorBtn = document.getElementById("color-picker");
 
 //listens to the whole grid for clicks,
 //if it's a div with class of "cell", change the background of that cell
@@ -11,13 +11,13 @@ grid.addEventListener("click", function(event) {
     }
 });
 
-//creates an individual row of length size
+//creates an individual row of length size and adds it to the grid
 function makeRow(length) {
-    let row = document.createElement("div");
+    const row = document.createElement("div");
     row.classList.add("row");
 
     for (let i = 0; i < length; i++) {
-        let cell = document.createElement("div");
+        const cell = document.createElement("div");
         cell.classList.add("cell");
         if (i % 2 == 0) {
             cell.classList.add("cell-other");
@@ -38,7 +38,7 @@ function makeGrid(rowLength, columnLength) {
 gridLengthBtn.addEventListener("click", function(event) {
     event.preventDefault();
     grid.innerHTML = "";
-    let rows = document.getElementById("rows").value;
-    let columns = document.getElementById("columns").value;
+    const rows = document.getElementById("rows").value;
+    const columns = document.getElementById("columns").value;
     makeGrid(rows, columns);
 });
