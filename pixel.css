@@ -1,0 +1,22 @@
+h1 {
+    background: skyblue;
+    text-align: center;
+}
+
+.form-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    width: 25px;
+    height: 25px;
+    background: whitesmoke;
+    border: 2px solid black;
+    margin: 1px;
+}
