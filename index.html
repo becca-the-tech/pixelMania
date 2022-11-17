@@ -8,24 +8,26 @@
 </head>
 
 <body>
-    <h1>Pixel Mania</h1>
-    <div class="form-container">
-        <div class="form-option">
-            <label for="rows">Number of Rows: </label>
-            <input type="number" min="0" id="rows">
+    <div class="main">
+        <h1>Pixel Mania</h1>
+        <div class="form-container">
+            <div class="form-option">
+                <label for="rows">Number of Rows: </label>
+                <input type="number" min="0" id="rows">
 
-            <label for="columns">Number of Columns: </label>
-            <input type="number" min="0" id="columns">
-            <button id="grid-length" type="submit">Submit</button>
+                <label for="columns">Number of Columns: </label>
+                <input type="number" min="0" id="columns">
+                <button id="grid-length" type="submit">Submit</button>
+            </div>
+
+            <div class="form-option">
+                <label for="color-picker">Pick a color: </label>
+                <input type="color" id="color-picker">
+            </div>
+
         </div>
-
-        <div class="form-option">
-            <label for="color-picker">Pick a color: </label>
-            <input type="color" id="color-picker">
+        <div id="grid" class="grid">
         </div>
-
-    </div>
-    <div id="grid" class="grid">
     </div>
 
     <script src="script.js"></script>
